@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Register Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="wrapper">
+
+            <div class="title">Customer's Register</div>
+            <form action="Customer_RegAuthentication" method="post">
+                <div class="field">
+                    <input type="text" required name="customer_aadhar" pattern="[0-9]{12}" title="enter 12 digits of aadhar" 
+                           >
+                    <label>Aadhar Number</label>
+                </div>
+                <div class="field">
+                    <input type="text" required name="contact" pattern="[0-9]{10}" title="enter correct mobile number" 
+                          >
+                    <label>Mobile Number</label>
+                </div>
+                <div class="field">
+                    <input type="text" required name="customer_name" pattern="^[a-zA-Z][a-zA-Z ]*$" title="enter proper name" 
+                           >
+                    <label>Name</label>
+                </div>
+                <div class="field">
+                    <input type="password" required name="password" oninvalid="this.setCustomValidity('Please enter Password')" oninput="setCustomValidity('')">
+                    <label>Password</label>
+                </div>
+                <!-- <div class="content">
+                  <div class="checkbox">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                  </div>
+                  <div class="pass-link"><a href="#">Forgot password?</a></div>
+                </div> -->
+                <div class="field">
+                    <input type="submit" value="Register">
+                </div>
+                <div class="signup-link">Already a member? <a href="customer_login.html">Login now</a></div>
+                <div class="signup-link">Not a customer? <a href="register.html">Farmer's Register</a></div>
+            </form>
+        </div>
+
+    </body>
+</html>
