@@ -30,10 +30,9 @@
     </head>
     <body>
         <%
-            String customer_aadhar = (String) session.getAttribute("customer_aadhar");
-            String time = (String) session.getAttribute("time");
-            out.println(time);
-            if (customer_aadhar == null || customer_aadhar == "" || time == "Up") {
+            String customer_aadhar="";
+            customer_aadhar = (String) session.getAttribute("customer_aadhar");
+            if (customer_aadhar == null || customer_aadhar == "" ) {
                 response.sendRedirect("customer_login.html");
             }
             int count=0;
@@ -179,16 +178,19 @@
                         <b>Current Bid</b> : Rs.<%=rs.getString(4)%>/kg
                     </div>
                         <%
-                        if(customer_aadhar.equals(rs.getString("customer_aadhar")) && Integer.valueOf(rs.getString("proceedpay"))==1)
+                            if(customer_aadhar!=null && customer_aadhar!="")
+                            {
+                        if(customer_aadhar.equals(String.valueOf(rs.getString("customer_aadhar"))) && (Integer.valueOf(rs.getString("proceedpay"))==1))
                         {
-                            System.out.println(customer_aadhar);
-                            System.out.println(rs.getString("customer_aadhar"));
+//                            System.out.println(customer_aadhar);
+//                            System.out.println(rs.getString("customer_aadhar"));
                         %>
                         <b>Chat with farmer</b>
                         <a href="https://wa.me/+91<%=rs.getString("farmer_contact")%>" target="blank"><button class="buynow-btn1">Chat Now</button></a>
                         <%
                             System.out.println("https://wa.me/+91"+rs.getString("farmer_contact"));
-                        }
+                        }}
+
                         %>
                         <br>
                         <%
@@ -315,7 +317,9 @@
                         <b>Current Bid</b> : Rs.<%=rs.getString(4)%>/kg 
                     </div>
                     <%
-                        if(customer_aadhar.equals(rs.getString("customer_aadhar")) && Integer.valueOf(rs.getString("proceedpay"))==1)
+                        if(customer_aadhar!=null && customer_aadhar!="")
+                            {
+                        if(customer_aadhar.equals(String.valueOf(rs.getString("customer_aadhar"))) && (Integer.valueOf(rs.getString("proceedpay"))==1))
                         {
                             System.out.println(customer_aadhar);
                             System.out.println(rs.getString("customer_aadhar"));
@@ -324,7 +328,7 @@
                         <a href="https://wa.me/+91<%=rs.getString("farmer_contact")%>" target="blank"><button class="buynow-btn1">Chat Now</button></a>
                         <%
                             System.out.println("https://wa.me/+91"+rs.getString("farmer_contact"));
-                        }
+                        }}
                         %>
                         <br>
                         <%
@@ -453,7 +457,9 @@
                         <b>Current Bid</b> : Rs.<%=rs.getString(4)%>/kg 
                     </div>
                     <%
-                        if(customer_aadhar.equals(rs.getString("customer_aadhar")) && Integer.valueOf(rs.getString("proceedpay"))==1)
+                        if(customer_aadhar!=null && customer_aadhar!="")
+                            {
+                        if(customer_aadhar.equals(String.valueOf(rs.getString("customer_aadhar"))) && (Integer.valueOf(rs.getString("proceedpay"))==1))
                         {
                             System.out.println(customer_aadhar);
                             System.out.println(rs.getString("customer_aadhar"));
@@ -462,7 +468,7 @@
                         <a href="https://wa.me/+91<%=rs.getString("farmer_contact")%>" target="blank"><button class="buynow-btn1">Chat Now</button></a>
                         <%
                             System.out.println("https://wa.me/+91"+rs.getString("farmer_contact"));
-                        }
+                        }}
                         %>
                         <br>
                         <%
@@ -586,7 +592,9 @@
                         <b>Current Bid</b> : Rs.<%=rs.getString(4)%>/kg
                     </div>
                     <%
-                        if(customer_aadhar.equals(rs.getString("customer_aadhar")) && Integer.valueOf(rs.getString("proceedpay"))==1)
+                        if(customer_aadhar!=null && customer_aadhar!="")
+                            {
+                        if(customer_aadhar.equals(String.valueOf(rs.getString("customer_aadhar"))) && (Integer.valueOf(rs.getString("proceedpay"))==1))
                         {
                             System.out.println(customer_aadhar);
                             System.out.println(rs.getString("customer_aadhar"));
@@ -595,7 +603,7 @@
                         <a href="https://wa.me/+91<%=rs.getString("farmer_contact")%>" target="blank"><button class="buynow-btn1">Chat Now</button></a>
                         <%
                             System.out.println("https://wa.me/+91"+rs.getString("farmer_contact"));
-                        }
+                        }}
                         %>
                         <br>
                         <%

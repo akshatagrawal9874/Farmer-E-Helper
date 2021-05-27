@@ -129,6 +129,35 @@
                     </div>
                     <hr style="height:3px; border:none; color:rgb(60,90,180); background-color: lightgreen;">
                     <%
+                        String endtime=rs.getString(10);
+                        String e[]=endtime.split(" ");
+                        for(int i=0;i<e.length;i++)
+                        {
+                            System.out.println(e[i]);
+                        }
+                        String end="";
+                        String e0[]=e[0].split("-");
+                        end=end+e0[e0.length-1];
+                        for(int i=e0.length-2;i>=0;i--)
+                        {
+                            end=end+"-"+e0[i];
+                        }
+                        end="("+end+")"+" "+e[1];
+                        if (Integer.valueOf(rs.getString(11)) == 0) {
+                    %>
+                    <b>End of Bid :</b>
+                    <br/>
+                    <b style="color:green"><%=end%></b><br>
+                    <%
+                    } else if (Integer.valueOf(rs.getString(11)) == 1) {
+                    %>
+                       <b>End of Bid :</b>
+                    <br/>
+                    <b style="color:green">Timed Out</b><br/>
+                    <% 
+                        }
+                    %>
+                    <%
                         if (rs.getInt("isUpdate") == 1) {
                     %>
                     <b style="color: green">Bid Value : Rs.<%=rs.getString(4)%>/kg</b>
@@ -246,6 +275,35 @@
                         <b>Quantity</b> : <%=rs.getString(12)%> kg
                     </div>
                     <hr style="height:3px; border:none; color:rgb(60,90,180); background-color: lightgreen;">
+                    <%
+                        String endtime=rs.getString(10);
+                        String e[]=endtime.split(" ");
+                        for(int i=0;i<e.length;i++)
+                        {
+                            System.out.println(e[i]);
+                        }
+                        String end="";
+                        String e0[]=e[0].split("-");
+                        end=end+e0[e0.length-1];
+                        for(int i=e0.length-2;i>=0;i--)
+                        {
+                            end=end+"-"+e0[i];
+                        }
+                        end="("+end+")"+" "+e[1];
+                        if (Integer.valueOf(rs.getString(11)) == 0) {
+                    %>
+                    <b>End of Bid :</b>
+                    <br/>
+                    <b style="color:green"><%=end%></b><br>
+                    <%
+                    } else if (Integer.valueOf(rs.getString(11)) == 1) {
+                    %>
+                       <b>End of Bid :</b>
+                    <br/>
+                    <b style="color:green">Timed Out</b><br/>
+                    <% 
+                        }
+                    %>
                     <%
                         if (rs.getInt("isUpdate") == 1) {
                     %>
@@ -365,6 +423,35 @@
                     </div>
                     <hr style="height:3px; border:none; color:rgb(60,90,180); background-color: lightgreen;">
                     <%
+                        String endtime=rs.getString(10);
+                        String e[]=endtime.split(" ");
+                        for(int i=0;i<e.length;i++)
+                        {
+                            System.out.println(e[i]);
+                        }
+                        String end="";
+                        String e0[]=e[0].split("-");
+                        end=end+e0[e0.length-1];
+                        for(int i=e0.length-2;i>=0;i--)
+                        {
+                            end=end+"-"+e0[i];
+                        }
+                        end="("+end+")"+" "+e[1];
+                        if (Integer.valueOf(rs.getString(11)) == 0) {
+                    %>
+                    <b>End of Bid :</b>
+                    <br/>
+                    <b style="color:green"><%=end%></b><br>
+                    <%
+                    } else if (Integer.valueOf(rs.getString(11)) == 1) {
+                    %>
+                       <b>End of Bid :</b>
+                    <br/>
+                    <b style="color:green">Timed Out</b><br/>
+                    <% 
+                        }
+                    %>
+                    <%
                         if (rs.getInt("isUpdate") == 1) {
                     %>
                     <b style="color: green">Bid Value : Rs.<%=rs.getString(4)%>/kg</b>
@@ -474,6 +561,35 @@
                         <b>Quantity</b> : <%=rs.getString(12)%> kg
                     </div>
                     <hr style="height:3px; border:none; color:rgb(60,90,180); background-color: lightgreen;">
+                    <%
+                        String endtime=rs.getString(10);
+                        String e[]=endtime.split(" ");
+                        for(int i=0;i<e.length;i++)
+                        {
+                            System.out.println(e[i]);
+                        }
+                        String end="";
+                        String e0[]=e[0].split("-");
+                        end=end+e0[e0.length-1];
+                        for(int i=e0.length-2;i>=0;i--)
+                        {
+                            end=end+"-"+e0[i];
+                        }
+                        end="("+end+")"+" "+e[1];
+                        if (Integer.valueOf(rs.getString(11)) == 0) {
+                    %>
+                    <b>End of Bid :</b>
+                    <br/>
+                    <b style="color:green"><%=end%></b><br>
+                    <%
+                    } else if (Integer.valueOf(rs.getString(11)) == 1) {
+                    %>
+                       <b>End of Bid :</b>
+                    <br/>
+                    <b style="color:green">Timed Out</b><br/>
+                    <% 
+                        }
+                    %>
                     <%
                         if (rs.getInt("isUpdate") == 1) {
                     %>
