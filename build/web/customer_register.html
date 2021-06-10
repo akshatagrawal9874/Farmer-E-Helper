@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Register Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+       <script>
+     function myfunc(){
+         var p1= document.getElementById("password").value;
+          var p2=document.getElementById("confirm_password").value;       
+          if(p1!=p2)
+         {
+            return false;
+        }   
+     }
+     </script>
+        <div class="wrapper">
+
+            <div class="title">Customer's Register</div>
+            <center><b style="color:green">Security Amount is Paid Successfully 🎉</b></center>
+            <form onsubmit="return myfunc()" action="Customer_RegAuthentication" method="post">
+                <div class="field">
+                    <input type="text" required name="customer_aadhar" pattern="[0-9]{12}" title="enter 12 digits of aadhar" 
+                           >
+                    <label>Aadhar Number</label>
+                </div>
+                <div class="field">
+                    <input type="text" required name="contact" pattern="[0-9]{10}" title="enter correct mobile number" 
+                          >
+                    <label>Mobile Number</label>
+                </div>
+                <div class="field">
+                    <input type="text" required name="customer_name" pattern="^[a-zA-Z][a-zA-Z ]*$" title="enter proper name" 
+                           >
+                    <label>Name</label>
+                </div>
+                <div class="field">
+                    <input type="password" required id="password" name="password" onkeyup='check();' 
+                           oninvalid="this.setCustomValidity('Please enter Password')" oninput="setCustomValidity('')">
+                    <label>Password</label>
+                </div>
+                <div class="field">
+                    <input type="password" required id="confirm_password"
+                           name="confirm_password" onkeyup='check();' 
+                           oninvalid="this.setCustomValidity('Please enter Confirm Password')" oninput="setCustomValidity('')">
+                    <label>Confirm Password</label>
+                </div>
+                <span id='message'></span>
+                <!-- <div class="content">
+                  <div class="checkbox">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                  </div>
+                  <div class="pass-link"><a href="#">Forgot password?</a></div>
+                </div> -->
+                
+                <div class="field">
+                    <input type="submit" value="Register">
+                </div>
+                <div class="signup-link">Already a member? <a href="customer_login.html">Login now</a></div>
+                <div class="signup-link">Not a customer? <a href="register.html">Farmer's Register</a></div>
+            </form>
+        </div>
+        <script>
+            var check = function () {
+                if (document.getElementById('password').value ==
+                        document.getElementById('confirm_password').value) {
+                    document.getElementById('message').style.color = 'green';
+                    document.getElementById('message').innerHTML = ' Matching';
+                } else {
+                    document.getElementById('message').style.color = 'red';
+                    document.getElementById('message').innerHTML = ' Not matching';
+                }
+            }
+        </script>
+    </body>
+</html>
