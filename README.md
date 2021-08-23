@@ -1,4 +1,4 @@
-#Farmer E-Helper
+# Farmer's E-Helper
 
 ![](https://github.com/akshatagrawal9874/E-Farm_Shop/blob/main/farmer.PNG?raw=true)
 
@@ -34,29 +34,29 @@ best price and certified image.
 ## Tech
 
 Tech. used: 
-#### HTML :fa-html5: 
-#### CSS :fa-css3:,
-#### Java (JSP,Servlet),
+#### HTML  
+#### CSS 
+#### Java (JSP,Servlet)
 #### MySQL 
 
 ## Previews
 
-### Farmer Login
+### Farmer's Login
 ![](https://github.com/akshatagrawal9874/E-Farm_Shop/blob/main/farmer_login.PNG?raw=true)
 
-### Farmer Register
+### Farmer's Register
 ![](https://github.com/akshatagrawal9874/E-Farm_Shop/blob/main/farmer_register.PNG?raw=true)
 
-### Customer Login
+### Customer's Login
 ![](https://github.com/akshatagrawal9874/E-Farm_Shop/blob/main/Customer_login.PNG?raw=true)
 
-### Customer Register
+### Customer's Register
 ![](https://github.com/akshatagrawal9874/E-Farm_Shop/blob/main/Customer_register.PNG?raw=true)
 
 ### Customer's Payment
 ![](https://github.com/akshatagrawal9874/E-Farm_Shop/blob/main/razorpay_integration.PNG?raw=true)
 
-### Farmer Home Page
+### Farmer's Home Page
 ![](https://github.com/akshatagrawal9874/E-Farm_Shop/blob/main/Welcome_farmer.PNG?raw=true)
 
 ![](https://github.com/akshatagrawal9874/E-Farm_Shop/blob/main/Products_Home_Page_farmer.PNG?raw=true)
@@ -64,7 +64,7 @@ Tech. used:
 ### Add Product 
 ![](https://github.com/akshatagrawal9874/E-Farm_Shop/blob/main/Add%20Product.PNG?raw=true)
 
-### Customer Home Page
+### Customer's Home Page
 ![](https://github.com/akshatagrawal9874/E-Farm_Shop/blob/main/Welcome_customer.PNG?raw=true)
 
 ![](https://github.com/akshatagrawal9874/E-Farm_Shop/blob/main/Products_Home_Page_Customer.PNG?raw=true)
