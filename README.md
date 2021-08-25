@@ -24,7 +24,8 @@ users can login with their ID at the same time.
 best price and its product image.
 - Products Page: Collection of Products for customers by the farmers with their 
 best price and certified image.
-- Bid Value Field: There is bid value field for customer to perform Bidding on
+- Bid Value Field: There is bid value field for customer to perform Bidding on Products.
+- Payment Field: The customer has to deposit safety amount before entering the bidding.
 
 
 
